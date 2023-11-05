@@ -3,25 +3,26 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.center {
+   @apply flex flex-col items-center
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.heading-1 {
+   @apply capitalize text-3xl font-bold py-4
+}
+
+.input-ctr {
+   @apply font-semibold text-blue-600 capitalize py-2 justify-between flex px-4 
+}
+
+.form-input {
+   @apply border-2 border-blue-600 rounded-lg
+}
+
+.form-btn {
+   @apply text-blue-600 w-full border-2 border-blue-600 bg-gray-100 font-bold capitalize py-2 px-4 my-4 rounded-lg
 }
