@@ -10,7 +10,7 @@ const Contact = () => {
       Array.from(e.currentTarget.elements).forEach( entry => {
          formData[entry.name] = entry.value
       })
-      await fetch('/api/mail', {
+      await fetch('https://nextjs-portfolio-blue-gamma.vercel.app/api/mail', {
          method: "post",
          body: JSON.stringify(formData)
       })
