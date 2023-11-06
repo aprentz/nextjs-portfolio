@@ -34,8 +34,6 @@ const Contact = () => {
   }
 };
 
-   }
-
    return (
       <div>
          <form className="center mt-8 min-w-[400px]" method="post" onSubmit={handleSubmit}>
