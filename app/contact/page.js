@@ -4,13 +4,15 @@ import { fromJSON } from "postcss"
 
 const Contact = () => {
 
+     const apiUrl = 'https://nextjs-portfolio-blue-gamma.vercel.app/api/mail';
+
    const handleSubmit = async (e) => {
       console.log('hello')
       let formData = {}
       Array.from(e.currentTarget.elements).forEach( entry => {
          formData[entry.name] = entry.value
       })
-      await fetch('https://nextjs-portfolio-blue-gamma.vercel.app/api/mail', {
+      await fetch(apiUrl, {
          method: "post",
          body: JSON.stringify(formData)
       })
