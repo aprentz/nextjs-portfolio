@@ -14,7 +14,7 @@ export async function POST(req, res) {
   `;
 
   const data = {
-    to: 'alex.rentz@outlook.com', // Change to your recipient
+    to: 'sarah.m.manssour@gmail.com', // Change to your recipient
     from: 'support@aprentz.com', // Change to your verified sender
     subject: 'Test successful!',
     text: message,
