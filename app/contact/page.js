@@ -7,6 +7,7 @@ const Contact = () => {
      const apiUrl = 'https://nextjs-portfolio-blue-gamma.vercel.app/api/mail';
 
    const handleSubmit = async (e) => {
+        e.preventDefault()
       console.log('hello')
       let formData = {}
       Array.from(e.currentTarget.elements).forEach( entry => {
