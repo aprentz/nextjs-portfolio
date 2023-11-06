@@ -32,5 +32,5 @@ export async function POST(req, res) {
 
 
 
-return new Response(JSON.stringify({ status: "ok" }))
+return new Response(JSON.stringify({ status: res }))
 }
