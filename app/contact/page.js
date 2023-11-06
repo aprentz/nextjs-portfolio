@@ -4,7 +4,7 @@ import { fromJSON } from "postcss"
 
 const Contact = () => {
 
-     const apiUrl = 'https://nextjs-portfolio-blue-gamma.vercel.app/api/mail';
+     const apiUrl = '/api/mail';
 
    const handleSubmit = async (e) => {
         e.preventDefault()
