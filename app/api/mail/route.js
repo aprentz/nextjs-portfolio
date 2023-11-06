@@ -1,5 +1,5 @@
 const sgMail = require('@sendgrid/mail')
-const key = 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
+const key = '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'
 sgMail.setApiKey(key)
 export async function POST(req, res) {
    const body = await req.json()
@@ -12,7 +12,7 @@ export async function POST(req, res) {
   `;
 
    const data = {
-      to: 'sarah.m.manssour@gmail.com', // Change to your recipient
+      to: 'alex.rentz@outlook.com', // Change to your recipient
       from: 'support@aprentz.com', // Change to your verified sender
       subject: 'Test successful!',
       text: message,
