@@ -1,7 +1,7 @@
 const sgMail = require('@sendgrid/mail');
 const key = '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';
 
-sgMail.setApiKey(key);
+sgMail.setApiKey(process.env.SENGRID_API_KEY);
 
 export async function POST(req, res) {
   const body = await req.json();
