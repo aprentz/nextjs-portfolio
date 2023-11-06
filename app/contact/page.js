@@ -18,7 +18,6 @@ const Contact = () => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-      'Authorization': 'Bearer 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',
       },
       body: JSON.stringify(formData),
     });
