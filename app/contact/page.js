@@ -12,10 +12,27 @@ const Contact = () => {
       Array.from(e.currentTarget.elements).forEach( entry => {
          formData[entry.name] = entry.value
       })
-      await fetch(apiUrl, {
-         method: "post",
-         body: JSON.stringify(formData)
-      })
+        try {
+    const response = await fetch(apiUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      console.log('Request successful');
+      // Handle successful response
+    } else {
+      console.error('Request failed with status:', response.status);
+      // Handle error response
+    }
+  } catch (error) {
+    console.error('Error during fetch:', error);
+    // Handle fetch error
+  }
+};
 
    }
 
